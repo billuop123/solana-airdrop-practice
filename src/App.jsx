@@ -19,11 +19,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 import { Airdrop } from "./Airdrop";
 function App() {
   return (
-    <ConnectionProvider
-      endpoint={
-        "https://solana-devnet.g.alchemy.com/v2/YWHo0bEfccQgI26dhf9_hOWWxVYmJMc9"
-      }
-    >
+    <ConnectionProvider endpoint={""}>
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
           <WalletMultiButton />
